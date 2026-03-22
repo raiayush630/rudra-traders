@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    @apply text-bark-900 bg-white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-wood-600 hover:bg-wood-700 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2 shadow-md hover:shadow-lg hover:-translate-y-0.5;
+  }
+  .btn-outline {
+    @apply border-2 border-wood-600 text-wood-600 hover:bg-wood-600 hover:text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 inline-flex items-center gap-2;
+  }
+  .section-title {
+    @apply font-display text-3xl md:text-4xl font-bold text-bark-800;
+  }
+  .section-subtitle {
+    @apply text-wood-600 uppercase tracking-widest text-sm font-semibold mb-3;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden;
+  }
+  .grain-overlay {
+    position: relative;
+  }
+  .grain-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+  .opacity-0-init { opacity: 0; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f5f0eb; }
+::-webkit-scrollbar-thumb { background: #c4711e; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #a85c14; }
+
+/* Whatsapp pulse */
+@keyframes wa-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+  70% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+.whatsapp-pulse {
+  animation: wa-pulse 2s infinite;
+}

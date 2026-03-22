@@ -1,0 +1,217 @@
+[
+  {
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+      "name": "Plywood",
+      "slug": "plywood",
+      "description": "Premium quality plywood for all construction and furniture needs",
+      "icon": "🪵",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+      "name": "Sunmica & Laminates",
+      "slug": "sunmica",
+      "description": "High-gloss and matte laminates in hundreds of designs",
+      "icon": "✨",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+      "name": "Adhesives & Gum",
+      "slug": "adhesives",
+      "description": "Industrial-grade adhesives and wood glues",
+      "icon": "🔧",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+      "name": "Hardware Items",
+      "slug": "hardware",
+      "description": "Hinges, handles, screws, and all hardware accessories",
+      "icon": "⚙️",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "name": "BWR Plywood 19mm",
+      "category": 1,
+      "description": "Boiling Water Resistant plywood, ideal for kitchens and bathrooms. Superior bonding with phenolic resin. Suitable for furniture, cabinets, and flooring.",
+      "price": "1850.00",
+      "price_unit": "per sheet (8x4 ft)",
+      "image": null,
+      "brand": "Century",
+      "thickness": "19mm",
+      "size": "8x4 ft",
+      "is_featured": true,
+      "in_stock": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "name": "Commercial Plywood 12mm",
+      "category": 1,
+      "description": "High-quality commercial grade plywood for general purpose use. Perfect for interior furniture, partitions, and wall paneling.",
+      "price": "950.00",
+      "price_unit": "per sheet (8x4 ft)",
+      "image": null,
+      "brand": "Greenply",
+      "thickness": "12mm",
+      "size": "8x4 ft",
+      "is_featured": true,
+      "in_stock": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "name": "Marine Plywood 18mm",
+      "category": 1,
+      "description": "Waterproof marine-grade plywood. Excellent for outdoor furniture, boat building, and areas with high moisture exposure.",
+      "price": "2200.00",
+      "price_unit": "per sheet (8x4 ft)",
+      "image": null,
+      "brand": "National",
+      "thickness": "18mm",
+      "size": "8x4 ft",
+      "is_featured": false,
+      "in_stock": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "name": "Sunmica Laminate - Walnut Finish",
+      "category": 2,
+      "description": "Premium walnut wood grain laminate. Provides realistic wood texture with durability. Scratch and heat resistant surface.",
+      "price": "180.00",
+      "price_unit": "per sheet",
+      "image": null,
+      "brand": "Formica",
+      "thickness": "1mm",
+      "size": "8x4 ft",
+      "is_featured": true,
+      "in_stock": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+      "name": "High Gloss White Laminate",
+      "category": 2,
+      "description": "Ultra-high gloss white laminate for modern kitchen and wardrobe fronts. Easy to clean, fingerprint resistant.",
+      "price": "210.00",
+      "price_unit": "per sheet",
+      "image": null,
+      "brand": "Merino",
+      "thickness": "1mm",
+      "size": "8x4 ft",
+      "is_featured": true,
+      "in_stock": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+      "name": "Fevicol SH - 5kg",
+      "category": 3,
+      "description": "India's most trusted wood adhesive. Provides strong, durable bond for plywood, laminates, and wood joints. Water-resistant formula.",
+      "price": "650.00",
+      "price_unit": "per can",
+      "image": null,
+      "brand": "Pidilite",
+      "thickness": "",
+      "size": "5 kg",
+      "is_featured": true,
+      "in_stock": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+      "name": "Contact Cement Adhesive",
+      "category": 3,
+      "description": "High-strength contact adhesive for bonding laminates to substrates. Fast drying, solvent-based for professional use.",
+      "price": "420.00",
+      "price_unit": "per litre",
+      "image": null,
+      "brand": "Araldite",
+      "thickness": "",
+      "size": "1 Litre",
+      "is_featured": false,
+      "in_stock": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+      "name": "Concealed Hinges Set",
+      "category": 4,
+      "description": "Heavy-duty concealed cabinet hinges with soft-close mechanism. Adjustable 3-way for perfect alignment. Pack of 10 pairs.",
+      "price": "850.00",
+      "price_unit": "per pack of 10",
+      "image": null,
+      "brand": "Ebco",
+      "thickness": "",
+      "size": "35mm cup",
+      "is_featured": false,
+      "in_stock": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+      "name": "Drawer Channel Slides 18 inch",
+      "category": 4,
+      "description": "Premium ball-bearing drawer slides with full extension. Smooth operation, 40kg load capacity. Suitable for all kitchen and furniture drawers.",
+      "price": "320.00",
+      "price_unit": "per pair",
+      "image": null,
+      "brand": "Hettich",
+      "thickness": "",
+      "size": "18 inch",
+      "is_featured": false,
+      "in_stock": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  }
+]
