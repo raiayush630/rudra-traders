@@ -1,9 +1,20 @@
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views.generic import TemplateView
+
 
 urlpatterns = [
+    # ✅ Admin
     path('admin/', admin.site.urls),
+
+    # ✅ API routes
     path('api/', include('products.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+    # ✅ React frontend (IMPORTANT - always last)
+    re_path(r'^.*$', TemplateView.as_view(template_name='index.html')),
+]
+
+# ✅ Media files (images etc.)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
